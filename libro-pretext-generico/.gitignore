@@ -3,7 +3,7 @@
 !.gitignore
 
 # don't track unpublished builds
-output
+# output
 
 # don't track assets generated from source
 generated-assets
@@ -14,6 +14,7 @@ node_modules
 # don't track error logs
 .error_schema.log
 cli.log
+.log
 
 # don't track OS related files (windows/macos/linux)
 .DS_Store

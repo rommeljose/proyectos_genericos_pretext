@@ -1,6 +1,10 @@
 # Proyecto Generico para PreTeXt
 
-Esta es una propuesta y ejemplo base con los requerimientos necesarios para editar un documento (libro, publicación o algún documento genérico) con [**PreTeXt**](https://pretextbook.org/). Usando [**Codespace**](https://docs.github.com/en/codespaces) asociado a este repositorio, lo que permite tener en la nube de GitHub, todo lo necesario para la edición y publicación del documento creado en el formato de preferencia: LaTeX, PDF, web-html, EPUB, cuaderno Jupyter, braille, etc.
+Esta es una propuesta y ejemplo base con los requerimientos necesarios para editar un: libro, publicación o algún documento genérico, con [**PreTeXt**](https://pretextbook.org/). Usando [**Codespace de GitHub**](https://docs.github.com/en/codespaces) y asociandolo a este repositorio, lo que permitiría tener en la nube de GitHub, todo lo necesario para la edición y publicación del documento creado en el formato de preferencia: LaTeX, PDF, web-html, EPUB, cuaderno Jupyter, braille, etc.
+
+Como ejemplo puede ver el [Libro Web](https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html), creado con los script suminstrados en este repositorio (.ptx).
+
+[<img src=".es-Es\ejemplo_libro.png" border="1" alt="Ejemplo de la salida genérica de las fuentes suministradas" width="420" height="300">](https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html).
 
 [**PreTeXt**](https://pretextbook.org/) es un lenguaje de marcado de las partes lógicas de un documento. El autor, solo debe preocuparse y concentrarse en capturar sus ideas para compartirlas con otros; pero no en la presentación, ya que de eso se encargan una diversidad de hojas de estilo. [**PreTeXt**](https://pretextbook.org/) es un vocabulario que usa XML; los códigos que se escriben son "marcadores", con etiquetas específicas que describen la estructura semántica de un documento.
 

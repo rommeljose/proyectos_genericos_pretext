@@ -1,0 +1,4 @@
+/home/rjcg/mi_editorial/proyectos_genericos_pretext/libro-pretext-generico/source/main.ptx:35:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element biography, got colophon
+/home/rjcg/mi_editorial/proyectos_genericos_pretext/libro-pretext-generico/source/main.ptx:32:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMWRONG: Did not expect element subtitle there
+/home/rjcg/mi_editorial/proyectos_genericos_pretext/libro-pretext-generico/source/main.ptx:30:0:ERROR:RELAXNGV:RELAXNG_ERR_CONTENTVALID: Element book failed to validate content
+/home/rjcg/mi_editorial/proyectos_genericos_pretext/libro-pretext-generico/source/main.ptx:3:0:ERROR:RELAXNGV:RELAXNG_ERR_ELEMNAME: Expecting element docinfo, got pretext

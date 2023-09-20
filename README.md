@@ -8,23 +8,29 @@ El formato de archivo de las fuente de los escritos en [**PreTeXt**](https://pre
 
 # Uso de este repositorio con Codespaces de GitHub
 
-Luego de crear un Codespace a partir del contenido de la rama *main* de este repositorio, en el terminal de codespace, debe de proceder a instalar  **PreTeXt-CLI** con:
+Luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de este repositorio, en el terminal del `Codespaces`, debe de proceder a instalar  **PreTeXt-CLI** con:
 
->### $ `pip install pretext`
+>#### $ `pip install pretext`
 
-Luego se debe ir al directorio **libro-pretext-generico** para poder crear, modificar e interactuar con los archivos fuentes (.ptx) del proyecto ejemplo.
+Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
 
->### $ `cd libro-pretext-generico`
+>#### $ `cp .es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`
 
-Para convertir esos códigos fuentes (o los modificados) a uno de los formatos de salida disponibles, ejemplo: HTML, se debe ejecutar el comando:
+>#### $ `cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`
 
->### $ `pretext build web`
+Para poder crear, modificar e interactuar con los archivos fuentes (.ptx) del proyecto ejemplo debe ir al directorio **libro-pretext-generico**.
 
-Después de convertir su fuente a, digamos, HTML, puede ver el resultado usando el comando:
+>#### $ `cd libro-pretext-generico`
 
->### $ `pretext view web`
+Ya instalado y configurado **PreTeXt**, para iniciar la edición y posterior conversión de los códigos fuentes a uno de los formatos de salida disponibles, ejemplo: HTML, se debe ejecutar el comando:
 
-**Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones.
+>#### $ `pretext build web`
+
+Después de convertir su fuente a HTML, puede ver el resultado usando el comando:
+
+>#### $ `pretext view web`
+
+**Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones en los diversos formatos permitidos.
 
 <img src="https://pretextbook.org/examples/showcase/html/external/ptx-logo.png" alt="drawing" width="200"/>
 
@@ -38,6 +44,14 @@ Los códigos fuente de los textos y su estructura son procesados por un programa
 * PreTeXt es legible y escribible por humanos.
 * Los documentos PreTeXt sirven como una fuente única que se puede convertir fácilmente a muchos otros formatos, actuales y futuros.
 * PreTeXt respeta las buenas prácticas de diseño que se han desarrollado durante los últimos siglos.
+* PreTeXt facilita a los autores la implementación de funciones que son comunes y razonables.
+* PreTeXt admite documentos en línea que utilizan todas las capacidades de la Web.
+* La salida de PreTeXt se diseña seleccionando de una lista de plantillas disponibles, lo que libera al autor de la carga que implica la micro gestión  del formato de salida.
+* PreTeXt es gratuito: el software está disponible sin coste alguno, con una licencia abierta. El uso de PreTeXt no impone ninguna restricción a los documentos preparados con el sistema.
+* PreTeXt no es un sistema cerrado: los documentos se pueden convertir a LaTeX y luego desarrollarse utilizando herramientas estándar de LaTeX.
+* PreTeXt reconoce que los documentos académicos implican la interacción de autores, editores, académicos, curadores, instructores, estudiantes y lectores, y que cada grupo tiene sus propias necesidades y objetivos.
+* PreTeXt reconoce el valor inherente de producir material que sea accesible para todos.
+mos siglos.
 * PreTeXt facilita a los autores la implementación de funciones que son comunes y razonables.
 * PreTeXt admite documentos en línea que utilizan todas las capacidades de la Web.
 * La salida de PreTeXt se diseña seleccionando de una lista de plantillas disponibles, lo que libera al autor de la carga que implica la micro gestión  del formato de salida.

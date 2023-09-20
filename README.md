@@ -20,6 +20,6 @@ Los códigos fuente de los textos y su estructura son procesados por un programa
 * PreTeXt admite documentos en línea que utilizan todas las capacidades de la Web.
 * La salida de PreTeXt se diseña seleccionando de una lista de plantillas disponibles, lo que libera al autor de la carga que implica la microgestión del formato de salida.
 * PreTeXt es gratuito: el software está disponible sin coste alguno, con una licencia abierta. El uso de PreTeXt no impone ninguna restricción a los documentos preparados con el sistema.
-* PreTeXt no es un sistema cerrado: los documentos se pueden convertir a L A T E X y luego desarrollarse utilizando herramientas estándar de L A T E X.
+* PreTeXt no es un sistema cerrado: los documentos se pueden convertir a LaTeX y luego desarrollarse utilizando herramientas estándar de LaTeX.
 * PreTeXt reconoce que los documentos académicos implican la interacción de autores, editores, académicos, curadores, instructores, estudiantes y lectores, y que cada grupo tiene sus propias necesidades y objetivos.
 * PreTeXt reconoce el valor inherente de producir material que sea accesible para todos.

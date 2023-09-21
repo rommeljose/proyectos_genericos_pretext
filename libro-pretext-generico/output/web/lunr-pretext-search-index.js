@@ -7,7 +7,7 @@ var ptx_lunr_docs = [
   "type": "Colofón",
   "number": "",
   "title": "Colofón",
-  "body": "  Diseño de la Portada  AUTOR DE LA PORTADA    Editor Productor  NOMBRE DEL EDITOR O DEL AUTOR   1 edición digital, 2023   TÍTULO DEL LIBRO o DE LA PÁGINA WEB DEL LIBRO   copyright  "
+  "body": "  Diseño de la Portada  AUTOR DE LA PORTADA    Editor Productor  NOMBRE DEL EDITOR O DEL AUTOR   1 edición digital, 2023    TÍTULO DEL LIBRO o DE LA PÁGINA WEB DEL LIBRO   https:\/\/efemeridescumana.blogspot.com\/   copyright  "
 },
 {
   "id": "author-biografia",

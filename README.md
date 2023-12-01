@@ -18,9 +18,9 @@ Luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de e
 
 Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
 
->#### $ `cp .es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`
+>#### $ `cp ./.es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`
 
->#### $ `cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`
+>#### $ ~`cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`~
 
 Para poder crear, modificar e interactuar con los archivos fuentes (.ptx) del proyecto ejemplo debe ir al directorio **libro-pretext-generico**.
 

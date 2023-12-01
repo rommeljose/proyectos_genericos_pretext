@@ -12,7 +12,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "pip3 install --user -r requirements.txt"
+	"postCreateCommand": "pip3 install --user -r libro-pretexto-generico/requirements.txt"
 	//"postCreateCommand": cp .es-Es/es-ES.xml 
 	//"postCreateCommand": "pretext --version"
 

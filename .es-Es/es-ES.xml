@@ -185,7 +185,7 @@ along with PreTeXt.  If not, see <http://www.gnu.org/licenses/>.
     <localization string-id='toc'>Índice</localization>
     <localization string-id='abstract'>Resumen</localization>
     <localization string-id='preface'>Prefacio</localization>
-    <localization string-id='acknowledgement'>Agradecimentos</localization>
+    <localization string-id='acknowledgement'>Agradecimientos</localization>
     <localization string-id='biography'>Biografía del autor</localization>
     <!-- singular and plural titles for biography subdivision -->
     <!-- <localization string-id='about-author'>About the Author</localization> -->

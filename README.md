@@ -10,9 +10,8 @@ Como ejemplo puede ver el [Libro Web](https://rommeljose.github.io/proyectos_gen
 
 El formato de archivo de las fuente de los escritos en [**PreTeXt**](https://pretextbook.org/), son archivos ASCII en texto plano, que se pueden guardar con la extensión .ptx o .xml. Los editores de textos pueden corregir la sintaxis y resaltar los código [**PreTeXt**](https://pretextbook.org/); pero, [**Visual Studio Code**](https://code.visualstudio.com/) -entre otras funciones- tiene un complemento asociado a [**PreTeXt**](https://pretextbook.org/) y sus fuentes en .ptx.
 
-# Uso de este repositorio con Codespaces de GitHub
-
-Luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de este repositorio, en el terminal del `Codespaces`, debe de proceder a instalar  **PreTeXt-CLI** con:
+# Uso de este repositorio en un entorno Linux (Ubuntu) con Python instalado o con Codespaces de GitHub
+En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de este repositorio, en el terminal del `Codespaces`, debe de proceder a instalar  **PreTeXt-CLI** con:
 
 >#### $ `pip install pretext`
 

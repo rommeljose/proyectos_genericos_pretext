@@ -13,6 +13,17 @@ El formato de archivo de las fuente de los escritos en [**PreTeXt**](https://pre
 # Uso de este repositorio en un entorno Linux (Ubuntu) con Python instalado o con Codespaces de GitHub
 En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de este repositorio, en el terminal del `Codespaces`, debe de proceder a instalar  **PreTeXt-CLI** con:
 
+### Es conveniente instalar Pretext en un *Entorno Virtual* Python:
+> `python -m venv editorial`
+#### Nota: Verifique si tiene instalado Pyhon o Python3
+
+#### Ahora se debe activar el entorno virtual:
+> `.\editorial\Scripts\activate`
+
+#### El prompt cambia para indicar que se esta dentro del entorno virtual (editorial).
+
+### PROCEDIMIENTO PARA INSTALAR PRETEXT
+
 >#### $ `pip install pretext`
 
 >> **Nota: Este paso se puede obviar:** Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
@@ -55,8 +66,9 @@ Los códigos fuente de los textos y su estructura son procesados por un programa
 * PreTeXt reconoce que los documentos académicos implican la interacción de autores, editores, académicos, curadores, instructores, estudiantes y lectores, y que cada grupo tiene sus propias necesidades y objetivos.
 * PreTeXt reconoce el valor inherente de producir material que sea accesible para todos.
 
+###  Otras Dependencias:
 
-### Nota: Este conjunto de fonts, permite la incorporación de letras de distintas naturaleza:
+#### Nota: Este conjunto de fonts, permite la incorporación de letras de distintas naturaleza:
 
 #### Instalar TexLive base:
 

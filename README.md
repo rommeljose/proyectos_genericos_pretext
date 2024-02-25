@@ -54,5 +54,24 @@ Los códigos fuente de los textos y su estructura son procesados por un programa
 * PreTeXt no es un sistema cerrado: los documentos se pueden convertir a LaTeX y luego desarrollarse utilizando herramientas estándar de LaTeX.
 * PreTeXt reconoce que los documentos académicos implican la interacción de autores, editores, académicos, curadores, instructores, estudiantes y lectores, y que cada grupo tiene sus propias necesidades y objetivos.
 * PreTeXt reconoce el valor inherente de producir material que sea accesible para todos.
+
+
+### Nota: Este conjunto de fonts, permite la incorporación de letras de distintas naturaleza:
+
+#### Instalar TexLive base:
+
+> `sudo apt-get install texlive-latex-base`
+
+> `sudo apt-get install texlive-fonts-recommended`
+
+> `sudo apt-get install texlive-fonts-extra`
+
+#### ojo también es necesario:
+
+> `sudo apt-get install texlive-science`
+
+#### Instalar paquetes extras:
+
+> `sudo apt-get install texlive-latex-extra`
   
   

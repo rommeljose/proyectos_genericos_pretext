@@ -18,7 +18,7 @@ En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** 
 #### Nota: Verifique si tiene instalado Pyhon o Python3
 
 #### Ahora se debe activar el entorno virtual:
-> `.\editorial\Scripts\activate`
+> `source ./editorial/Scripts/activate`
 
 #### El prompt cambia para indicar que se esta dentro del entorno virtual (editorial).
 

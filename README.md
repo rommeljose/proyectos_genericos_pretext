@@ -18,7 +18,7 @@ En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** 
 #### Nota: Verifique si tiene instalado Pyhon o Python3
 
 #### Ahora se debe activar el entorno virtual:
-> `source ./editorial/Scripts/activate`
+> `$ source ./editorial/bin/activate`
 
 #### El prompt cambia para indicar que se esta dentro del entorno virtual (editorial).
 
@@ -44,7 +44,7 @@ Después de convertir su fuente a HTML, puede ver el resultado usando el comando
 
 >#### $ `pretext view web`
 
-**Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones en los diversos formatos permitidos.
+**Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones en los diversos formatos permitidos: pdf,  epub, kindle, etc.
 
 <img src="https://pretextbook.org/examples/showcase/html/external/ptx-logo.png" alt="drawing" width="200"/>
 
@@ -86,4 +86,10 @@ Los códigos fuente de los textos y su estructura son procesados por un programa
 
 > `sudo apt-get install texlive-latex-extra`
   
+#### Ver:
+
+
+* [**How To Install "texlive-latex-base" Package on Ubuntu**](https://zoomadmin.com/HowToInstall/UbuntuPackage/texlive-latex-base)
+
+* [**LaTeX: instalación TeXLive + Texmaker (Ubuntu)**](https://mecatronicauaslp.wordpress.com/2013/07/25/latex-instalacion-texlive-texmaker-ubuntu/)
   

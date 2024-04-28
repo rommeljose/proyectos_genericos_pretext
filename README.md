@@ -44,6 +44,10 @@ Después de convertir su fuente a HTML, puede ver el resultado usando el comando
 
 >#### $ `pretext view web`
 
+Exporte a su repositorio en la rama `gh-page`
+
+>#### $ `pretext deploy`
+
 **Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones en los diversos formatos permitidos: pdf,  epub, kindle, etc.
 
 <img src="https://pretextbook.org/examples/showcase/html/external/ptx-logo.png" alt="drawing" width="200"/>

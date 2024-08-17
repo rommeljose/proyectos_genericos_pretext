@@ -8,6 +8,10 @@
 # don't track assets generated from source
 generated-assets
 
+# output
+
+log
+
 # don't track node packages
 node_modules
 

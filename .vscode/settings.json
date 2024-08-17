@@ -2,7 +2,8 @@
     "xml.fileAssociations": [
         {
             "pattern": "**/source/**.ptx",
-            "systemId": "/home/rommel/.ptx/2.6.1/core/schema/pretext.rng"
+            "systemId": "/home/rommel/.ptx/version unknown/core/schema/pretext.rng"
         }
-    ]
+    ],
+    "pretext-tools.installPretext": false
 }

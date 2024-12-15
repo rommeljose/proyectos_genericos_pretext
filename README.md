@@ -28,7 +28,9 @@ En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** 
 
 >> **Nota: Este paso se puede obviar:** Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
 
->> #### $ `cp ./.es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`
+>> #### $  `cp ./.es-Es/es-ES.xml ~/.ptx/2.10.1/core/xsl/localizations/`
+
+>> #### $ ~`cp ./.es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`~
 
 >> #### $ ~`cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`~
 

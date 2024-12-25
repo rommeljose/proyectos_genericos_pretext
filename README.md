@@ -26,13 +26,35 @@ En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** 
 
 >#### $ `pip install pretext`
 
->> **Nota: Este paso se puede obviar:** Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
+>> **Nota 1: Este paso se puede obviar:** Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
 
 >> #### $  `cp ./.es-Es/es-ES.xml ~/.ptx/2.10.1/core/xsl/localizations/`
 
+<!-- 
 >> #### $ ~`cp ./.es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`~
-
 >> #### $ ~`cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`~
+-->
+
+
+## 🛠️ **Nota 2: Este paso se puede obviar**
+
+Desde la instalación local de PreTeXt `~\.ptx\2.10.1\core\xsl`, modifique las secciones siguientes para incorporar los logos de su preferencia:
+
+```xml
+<xsl:template name="mathjax-link">
+    <a class="mathjax-link" href="https://www.mathjax.org" title="MathJax">
+        <img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"/>
+    </a>
+</xsl:template>
+```
+
+```xml
+<xsl:template name="runestone-link">
+    <a class="runestone-link" href="https://runestone.academy" title="Runestone Academy">
+        <img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"/>
+    </a>
+</xsl:template>
+```
 
 Para poder crear, modificar e interactuar con los archivos fuentes (.ptx) del proyecto ejemplo debe ir al directorio **libro-pretext-generico**.
 

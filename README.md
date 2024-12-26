@@ -1,44 +1,62 @@
-# Proyecto Genérico para `PreTeXt-CLI`
-
-Esta es una propuesta y ejemplo base con los requerimientos necesarios para editar un: libro, publicación o algún documento genérico, con [**PreTeXt**](https://pretextbook.org/). Usando [**Codespace de GitHub**](https://docs.github.com/en/codespaces) y asociándolo a este repositorio, lo que permitiría tener en la nube de GitHub, todo lo necesario para la edición y publicación del documento creado en el formato de preferencia: LaTeX, PDF, web-html, EPUB, cuaderno Jupyter, braille, etc.
-
-Como ejemplo puede ver el [Libro Web](https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html), creado con los script suministrados en este repositorio (.ptx).
-
-[<img src=".es-Es\ejemplo_libro.png" border="1" alt="Ejemplo de la salida genérica de las fuentes suministradas" width="420" height="300">](https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html)
-
-[**PreTeXt**](https://pretextbook.org/) es un lenguaje de marcado de las partes lógicas de un documento. El autor, solo debe preocuparse y concentrarse en capturar sus ideas para compartirlas con otros; pero no en la presentación, ya que de eso se encargan una diversidad de hojas de estilo. [**PreTeXt**](https://pretextbook.org/) es un vocabulario que usa XML; los códigos que se escriben son "marcadores", con etiquetas específicas que describen la estructura semántica de un documento.
-
-El formato de archivo de las fuente de los escritos en [**PreTeXt**](https://pretextbook.org/), son archivos ASCII en texto plano, que se pueden guardar con la extensión .ptx o .xml. Los editores de textos pueden corregir la sintaxis y resaltar los código [**PreTeXt**](https://pretextbook.org/); pero, [**Visual Studio Code**](https://code.visualstudio.com/) -entre otras funciones- tiene un complemento asociado a [**PreTeXt**](https://pretextbook.org/) y sus fuentes en .ptx.
-
-# Uso de este repositorio en un entorno Linux (Ubuntu) con Python instalado o con Codespaces de GitHub
-En un terminal bash (Linux Ubuntu probado) o luego de crear un **`Codespaces`** a partir del contenido de la rama *main* de este repositorio, en el terminal del `Codespaces`, debe de proceder a instalar  **PreTeXt-CLI** con:
-
-### Es conveniente instalar Pretext en un *Entorno Virtual* Python:
-> `python -m venv editorial`
-#### Nota: Verifique si tiene instalado Pyhon o Python3
-
-#### Ahora se debe activar el entorno virtual:
-> `$ source ./editorial/bin/activate`
-
-#### El prompt cambia para indicar que se esta dentro del entorno virtual (editorial).
-
-### PROCEDIMIENTO PARA INSTALAR PRETEXT
-
->#### $ `pip install pretext`
-
->> **Nota 1: Este paso se puede obviar:** Desde la raíz del repositorio (/workspaces/proyectos_genericos_pretext), copie los archivos proporcionados con la configuración personalizado para Castellano (Venezuela) para sobrescribir los originales de la instalación en los directorios respectivos a continuación:
-
->> #### $  `cp ./.es-Es/es-ES.xml ~/.ptx/2.10.1/core/xsl/localizations/`
-
-<!-- 
->> #### $ ~`cp ./.es-Es/es-ES.xml /home/vscode/.ptx/xsl/localizations/es-ES.xml`~
->> #### $ ~`cp .es-Es/pretext-html.xsl /home/vscode/.ptx/xsl/pretext-html.xsl`~
--->
 
 
-## 🛠️ **Nota 2: Este paso se puede obviar**
+### 📚 **Proyecto Genérico para PreTeXt-CLI 🚀✨**
 
-Desde la instalación local de PreTeXt `~\.ptx\2.10.1\core\xsl`, modifique las secciones siguientes para incorporar los logos de su preferencia:
+Esta es una propuesta y ejemplo base con los requerimientos necesarios para editar un libro, publicación o algún documento genérico, con [**PreTeXt**](https://pretextbook.org/). Usando [**Codespace de GitHub**](https://docs.github.com/en/codespaces) y asociándolo a este repositorio, permite tener en la nube de GitHub todo lo necesario para la edición y publicación en diversos formatos: **LaTeX**, **PDF**, **HTML**, **EPUB**, **Jupyter Notebook**, **Braille**, entre otros.
+
+👉 **Ejemplo en producción:** [Libro Web](https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html)
+
+<a href="https://rommeljose.github.io/proyectos_genericos_pretext/titulo-libro.html">
+    <img src=".es-Es/ejemplo_libro.png" alt="Ejemplo de la salida genérica de las fuentes suministradas" width="600"/>
+</a>
+
+
+## 🚀 **¿Qué es PreTeXt?**
+
+[**PreTeXt**](https://pretextbook.org/) es un lenguaje de marcado semántico que permite estructurar documentos académicos y técnicos de manera lógica. Captura la estructura de libros de texto y trabajos de investigación y facilita su conversión a múltiples formatos.
+
+- **Formato de archivo:** `.ptx` o `.xml`.
+- **Editor recomendado:** [**Visual Studio Code**](https://code.visualstudio.com/) con complementos para PreTeXt.
+
+---
+
+## 🛠️ **Instalación de PreTeXt en Ubuntu o Codespaces**
+
+### 1️⃣ **Entorno Virtual Python (opcional pero recomendado)**
+
+```bash
+python -m venv editorial
+source ./editorial/bin/activate
+```
+
+> ⚠️ **Verifique si tiene Python instalado:**  
+> `$ python --version` o `$ python3 --version`
+
+---
+
+### 2️⃣ **Instalar PreTeXt-CLI**
+
+```bash
+pip install pretext
+```
+
+---
+
+### 3️⃣ **Configuración Adicional (Opcional)**
+
+Modifique para castellanizar el resultado PDF y WEB.
+
+Desde la raíz del repositorio:
+
+```bash
+cp ./.es-Es/es-ES.xml ~/.ptx/2.10.1/core/xsl/localizations/
+```
+
+---
+
+## ⚙️ **Ajustes Opcionales para personalizar los Iconos en la parte inferior de la página Web**
+
+Puedes personalizar los logos modificando la plantilla `pretext-html` en la instalación local `~\.ptx\2.10.1\core\xsl`:
 
 ```xml
 <xsl:template name="mathjax-link">
@@ -56,68 +74,100 @@ Desde la instalación local de PreTeXt `~\.ptx\2.10.1\core\xsl`, modifique las s
 </xsl:template>
 ```
 
-Para poder crear, modificar e interactuar con los archivos fuentes (.ptx) del proyecto ejemplo debe ir al directorio **libro-pretext-generico**.
+---
 
->#### $ `cd libro-pretext-generico`
+## 📂 **Estructura del Proyecto**
 
-Ya instalado y configurado **PreTeXt**, para iniciar la edición y posterior conversión de los códigos fuentes a uno de los formatos de salida disponibles, ejemplo: HTML, se debe ejecutar el comando:
+```plaintext
+📦 libro-pretext-generico
+.
+├── .devcontainer.json
+├── .git
+├── .github
+├── .gitignore
+├── .vscode
+├── README.md
+├── project.ptx
+├── requirements.txt
+├── codechat_config.yaml
+├── assets
+├── output
+├── publication
+└── source
+```
 
->#### $ `pretext build web`
+---
 
-Después de convertir su fuente a HTML, puede ver el resultado usando el comando:
+## 📝 **Comandos Básicos de PreTeXt**
 
->#### $ `pretext view web`
+### ➡️ **Construir el libro en formato HTML:**
+```bash
+pretext build web
+```
 
-Exporte a su repositorio en la rama `gh-page`
+### ➡️ **Ver el libro en el navegador:**
+```bash
+pretext view web
+```
 
->#### $ `pretext deploy`
+### ➡️ **Desplegar en GitHub Pages:**
+```bash
+pretext deploy
+```
 
-**Nota:** Siga los manuales de referencia de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-123) para optimizar y dar luz a sus creaciones en los diversos formatos permitidos: pdf,  epub, kindle, etc.
+---
 
-<img src="https://pretextbook.org/examples/showcase/html/external/ptx-logo.png" alt="drawing" width="200"/>
+## 📊 **Dependencias Adicionales para LaTeX**
 
-Cuando esté listo para compartir su proyecto con el mundo, puede copiar el contenido de output/web a cualquier servidor web. Una opción gratuita y cómoda es utilizar GitHub (puede seguir las indicaciones para hacerlo usted siguiendo las indicaciones en el  **gits** de [`rjcg`](https://gist.github.com/rommeljose/b4290459f59de4eb2cc9149ac3b14fae); también puede utilizar `pretext deploy` como se indica en el manual de [**PreTeXt**](https://pretextbook.org/doc/guide/html/processing-CLI.html#subsection-127).
+### Instalar Paquetes Básicos:
+```bash
+sudo apt-get install texlive-latex-base
+sudo apt-get install texlive-fonts-recommended
+sudo apt-get install texlive-fonts-extra
+sudo apt-get install texlive-science
+sudo apt-get install texlive-latex-extra
+```
 
-## El flujo de trabajo recomendado para PreTeXt 
-Los códigos fuente de los textos y su estructura son procesados por un programa **Python** llamado **PreTeXt-CLI**; que está estrechamente relacionada a [**Visual Studio Code**](https://code.visualstudio.com/). Predecesora a CLI y aún funcional, existe una herramienta llamada [**xsltproc**](https://gnome.pages.gitlab.gnome.org/libxslt/xsltproc.html) que puede procesar las fuentes XML con XSL usadas por [**PreTeXt**](https://pretextbook.org/).
+### Recursos Útiles:
+- [**How To Install "texlive-latex-base" Package on Ubuntu**](https://zoomadmin.com/HowToInstall/UbuntuPackage/texlive-latex-base)  
+- [**LaTeX: instalación TeXLive + Texmaker (Ubuntu)**](https://mecatronicauaslp.wordpress.com/2013/07/25/latex-instalacion-texlive-texmaker-ubuntu/)
 
-### [Principios de PreTeXt](https://pretextbook.org/doc/guide/html/philosophy.html#paragraphs-7) 
-* PreTeXt es un lenguaje de marcado que captura la estructura de libros de texto y trabajos de investigación.
-* PreTeXt es legible y escribible por humanos.
-* Los documentos PreTeXt sirven como una fuente única que se puede convertir fácilmente a muchos otros formatos, actuales y futuros.
-* PreTeXt respeta las buenas prácticas de diseño que se han desarrollado durante los últimos siglos.
-* PreTeXt facilita a los autores la implementación de funciones que son comunes y razonables.
-* PreTeXt admite documentos en línea que utilizan todas las capacidades de la Web.
-* La salida de PreTeXt se diseña seleccionando de una lista de plantillas disponibles, lo que libera al autor de la carga que implica la micro gestión  del formato de salida.
-* PreTeXt es gratuito: el software está disponible sin coste alguno, con una licencia abierta. El uso de PreTeXt no impone ninguna restricción a los documentos preparados con el sistema.
-* PreTeXt no es un sistema cerrado: los documentos se pueden convertir a LaTeX y luego desarrollarse utilizando herramientas estándar de LaTeX.
-* PreTeXt reconoce que los documentos académicos implican la interacción de autores, editores, académicos, curadores, instructores, estudiantes y lectores, y que cada grupo tiene sus propias necesidades y objetivos.
-* PreTeXt reconoce el valor inherente de producir material que sea accesible para todos.
+---
 
-###  Otras Dependencias:
+## 📚 **Principios de PreTeXt**
 
-#### Nota: Este conjunto de fonts, permite la incorporación de letras de distintas naturaleza:
+- Legible y escribible por humanos.  
+- Compatible con múltiples formatos.  
+- Respetuoso de las buenas prácticas editoriales.  
+- Gratuito y de código abierto.  
+- Enfocado en la accesibilidad y la experiencia del usuario.  
+- Capacidad de exportación a formatos como LaTeX, HTML, PDF, EPUB, entre otros.
 
-#### Instalar TexLive base:
+---
 
-> `sudo apt-get install texlive-latex-base`
+## 🎓 **Documentación Oficial**
 
-> `sudo apt-get install texlive-fonts-recommended`
+- [Documentación de PreTeXt](https://pretextbook.org/doc/guide/html/index.html)
+- [Repositorio de PreTeXt en GitHub](https://github.com/PreTeXtBook)
 
-> `sudo apt-get install texlive-fonts-extra`
+---
 
-#### ojo también es necesario:
+## 🤝 **Contribuciones**
 
-> `sudo apt-get install texlive-science`
+¡Las contribuciones son bienvenidas! Puedes abrir un **issue** o enviar un **pull request**.
 
-#### Instalar paquetes extras:
+---
 
-> `sudo apt-get install texlive-latex-extra`
-  
-#### Ver:
+## 📝 **Licencia**
 
+Este proyecto está bajo la licencia **MIT**. Consulta el archivo `LICENSE` para más detalles.
 
-* [**How To Install "texlive-latex-base" Package on Ubuntu**](https://zoomadmin.com/HowToInstall/UbuntuPackage/texlive-latex-base)
+---
 
-* [**LaTeX: instalación TeXLive + Texmaker (Ubuntu)**](https://mecatronicauaslp.wordpress.com/2013/07/25/latex-instalacion-texlive-texmaker-ubuntu/)
-  
+## 🚀 **¡Únete a la Comunidad PreTeXt!**
+
+- [Foro de PreTeXt](https://groups.google.com/forum/#!forum/pretext-support)
+- [Chat en Zulip](https://pretext.zulipchat.com/)
+
+---
+
